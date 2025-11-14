@@ -1,0 +1,128 @@
+/* Custom accent styles layered on top of Tailwind */
+:root {
+  --accent: #f97316;
+  --accent-dark: #ea580c;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid var(--accent);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent);
+  }
+}
+
+.glow-card {
+  position: relative;
+}
+
+.glow-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(120deg, rgba(249, 115, 22, 0.7), rgba(236, 72, 153, 0.7));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.timeline-line {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-image: linear-gradient(to bottom, rgba(249, 115, 22, 0.2), rgba(236, 72, 153, 0.6));
+}
+
+.timeline-point {
+  position: absolute;
+  left: 0.95rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 999px;
+  background-color: var(--accent);
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.5);
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #f97316, #ec4899, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-filter button.active {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.badge-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-card img {
+  height: 160px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.2));
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  background-color: rgba(249, 115, 22, 0.12);
+  padding: 0.25rem 0.95rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.footer-tab {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.35rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4b5563;
+  transition: all 0.2s ease;
+}
+
+.footer-tab:hover {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}

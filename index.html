@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Djebbari | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white font-[Space_Grotesk] text-gray-800 dark:bg-gray-950 dark:text-gray-100">
+    <header class="sticky top-0 z-50 bg-white/90 shadow-sm backdrop-blur-md dark:bg-gray-950/80">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+        <div class="flex items-center gap-2">
+          <div class="h-10 w-10 rounded-full bg-gradient-to-br from-orange-500 to-pink-500 text-center text-2xl font-bold text-white">A</div>
+          <p class="text-lg font-semibold">Ali Djebbari</p>
+        </div>
+        <ul class="hidden items-center gap-6 text-sm font-medium md:flex">
+          <li><a href="#about" class="hover:text-orange-500">About</a></li>
+          <li><a href="#skills" class="hover:text-orange-500">Skills</a></li>
+          <li><a href="#courses" class="hover:text-orange-500">Courses</a></li>
+          <li><a href="#experience" class="hover:text-orange-500">Experience</a></li>
+          <li><a href="#projects" class="hover:text-orange-500">Projects</a></li>
+          <li><a href="#tools" class="hover:text-orange-500">Tools</a></li>
+          <li><a href="#lab" class="hover:text-orange-500">Lab</a></li>
+          <li><a href="#resume" class="hover:text-orange-500">Resume</a></li>
+          <li><a href="#insights" class="hover:text-orange-500">Blog</a></li>
+          <li><a href="#contact" class="hover:text-orange-500">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+          <a
+            href="assets/docs/Ali_Djebbari_Resume.pdf"
+            target="_blank"
+            class="hidden rounded-full border border-gray-300 px-4 py-2 text-sm font-semibold hover:border-orange-400 hover:text-orange-500 dark:border-gray-700 md:inline-block"
+            >Download CV</a
+          >
+          <button id="mode-toggle" class="text-xl">☀️/🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-900 to-black text-white">
+        <div class="absolute inset-0 opacity-40">
+          <div class="absolute -left-8 top-10 h-64 w-64 rounded-full bg-orange-500 blur-3xl"></div>
+          <div class="absolute right-0 top-32 h-72 w-72 rounded-full bg-pink-500 blur-3xl"></div>
+        </div>
+        <div class="relative mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 lg:flex-row lg:items-center">
+          <div class="space-y-6 lg:w-2/3">
+            <p class="text-sm uppercase tracking-[0.3em] text-gray-400">CS @ George Mason University</p>
+            <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+              I build dependable software, automate infrastructure, and launch community ventures.
+            </h1>
+            <p class="text-lg text-gray-200">CS Student • Software Engineer • Entrepreneur • Tech Builder</p>
+            <p class="typewriter text-lg text-gray-100">Crafting code, creating impact, managing my own infrastructure.</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="#projects" class="rounded-full bg-white px-6 py-3 font-semibold text-gray-900 transition hover:-translate-y-1 hover:shadow-lg">Explore Projects</a>
+              <a href="#contact" class="rounded-full border border-white/40 px-6 py-3 font-semibold text-white hover:border-white hover:text-white">Let's Collaborate</a>
+            </div>
+            <div class="grid grid-cols-3 gap-6 pt-6 text-center text-white">
+              <div class="rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                <p class="text-3xl font-bold" data-count="5">0</p>
+                <p class="text-xs uppercase text-gray-300">Years coding</p>
+              </div>
+              <div class="rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                <p class="text-3xl font-bold" data-count="20">0</p>
+                <p class="text-xs uppercase text-gray-300">Projects shipped</p>
+              </div>
+              <div class="rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                <p class="text-3xl font-bold" data-count="3">0</p>
+                <p class="text-xs uppercase text-gray-300">Ventures launched</p>
+              </div>
+            </div>
+          </div>
+          <div class="glow-card relative rounded-3xl bg-white/5 p-8 backdrop-blur-lg lg:w-1/3">
+            <h2 class="mb-4 text-xl font-semibold text-gray-100">Currently Building</h2>
+            <ul class="space-y-4 text-gray-200">
+              <li>• Automating deployments for my home lab (Proxmox + Docker Compose)</li>
+              <li>• Researching AI agents that assist student clubs at GMU</li>
+              <li>• Designing wearable tech for player analytics at AshburnFC</li>
+              <li>• Writing about practical security for small founder teams</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-6xl px-6 py-16">
+        <div class="grid gap-12 md:grid-cols-2">
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-orange-500">About Me</p>
+            <h2 class="mt-4 text-3xl font-bold">Engineer, operator, and self-hosting enthusiast.</h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              I’m a Computer Science student at GMU with a passion for engineering smart systems and building real-world solutions. I'm experienced with cloud computing, system administration, backend programming, and network setup.
+            </p>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+              I run my own <strong>home server</strong> where I self-host services like Pi-hole (network-wide ad blocking), Nextcloud (personal cloud storage), Home Assistant (smart home hub), and other Docker-based tools. I manage this infrastructure over Tailscale and SSH, regularly maintaining and updating it to explore tech beyond the classroom.
+            </p>
+          </div>
+          <div class="space-y-4 rounded-2xl bg-gray-50 p-6 dark:bg-gray-900">
+            <h3 class="text-xl font-semibold">What recruiters love working with me on</h3>
+            <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+              <li class="flex gap-3">
+                <span class="text-2xl">⚡</span>
+                <div><strong>Production-ready mindset</strong><br />I’m comfortable owning deliverables end-to-end, from writing architecture docs to instrumenting metrics.</div>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-2xl">🛠️</span>
+                <div><strong>Systems tinkering</strong><br />I treat my home lab as a sandbox to test networking, virtualization, and distributed systems ideas.</div>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-2xl">🤝</span>
+                <div><strong>Community leadership</strong><br />I coach at AshburnFC, organize tech tutoring, and mentor peers through GMU CS study groups.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="bg-gray-50 py-16 dark:bg-gray-900">
+        <div class="mx-auto max-w-6xl px-6">
+          <p class="text-center text-sm uppercase tracking-[0.3em] text-orange-500">Skills & Certifications</p>
+          <h2 class="mt-4 text-center text-3xl font-bold">A multi-disciplinary stack</h2>
+          <div class="mt-10 grid gap-8 md:grid-cols-3">
+            <div class="rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-950">
+              <h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">Languages</h3>
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="mx-auto h-12 w-auto object-contain" />
+              </div>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-950">
+              <h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">DevOps & Cloud</h3>
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="mx-auto h-12 w-auto object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="mx-auto h-12 w-auto object-contain" />
+              </div>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-950">
+              <h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">Certifications</h3>
+              <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                <li>Oracle AI Professional Certified</li>
+                <li>Oracle Vectors AI Certified</li>
+                <li>Microsoft Office Specialist</li>
+                <li>Google IT Automation (in progress)</li>
+                <li>Azure Fundamentals (scheduled)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-10 rounded-3xl bg-white p-8 shadow-sm dark:bg-gray-950">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div>
+                <span class="badge-pill">Oracle University</span>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900 dark:text-gray-100">Verified digital badges</h3>
+                <p class="text-gray-600 dark:text-gray-300">Each badge links directly to Oracle’s credential portal for instant verification.</p>
+              </div>
+              <a href="https://linkedin.com/in/alidjebbari" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 transition hover:border-orange-400 hover:text-orange-500 dark:border-gray-700 dark:text-gray-100">
+                View on LinkedIn
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div class="mt-8 grid gap-6 md:grid-cols-3">
+              <article class="badge-card rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-orange-50 p-4 text-center shadow-sm dark:border-gray-800 dark:from-gray-900 dark:to-gray-800">
+                <img src="https://brm-workforce.oracle.com/pdf/certview/images/DB23AIOCP.png" alt="Oracle AI Vector Search Certified Professional badge" class="mx-auto w-full" loading="lazy" />
+                <div class="mt-4 space-y-2">
+                  <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Oracle AI Vector Search Professional</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Vector indexing, semantic search, RAG workflows on Oracle DB23c.</p>
+                  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=4EEF8D7C5B41296F21CDB0F1634D80841C891A07F26ACE51B0D7F477C5F57FFC" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800 dark:bg-orange-500 dark:hover:bg-orange-600">
+                    Verify badge
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+              <article class="badge-card rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-orange-50 p-4 text-center shadow-sm dark:border-gray-800 dark:from-gray-900 dark:to-gray-800">
+                <img src="https://brm-workforce.oracle.com/pdf/certview/images/OCI25GAIOCP.png" alt="Oracle Cloud Infrastructure 2025 Generative AI Professional badge" class="mx-auto w-full" loading="lazy" />
+                <div class="mt-4 space-y-2">
+                  <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100">OCI 2025 Generative AI Professional</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">LangChain, OCI GenAI Service, retrieval-augmented chatbots.</p>
+                  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=C09296A37F60B8452408B2D9831C8A2BE555E91BA554ADD24C845BFF745DAF1D" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800 dark:bg-orange-500 dark:hover:bg-orange-600">
+                    Verify badge
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+              <article class="badge-card rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-orange-50 p-4 text-center shadow-sm dark:border-gray-800 dark:from-gray-900 dark:to-gray-800">
+                <img src="https://brm-workforce.oracle.com/pdf/certview/images/OCI25AICFAV1.png" alt="Oracle Cloud Infrastructure 2025 AI Foundations Associate badge" class="mx-auto w-full" loading="lazy" />
+                <div class="mt-4 space-y-2">
+                  <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100">OCI 2025 AI Foundations Associate</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">AI/ML fundamentals, model deployment, and responsible AI on OCI.</p>
+                  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=BEC9109DA47017731CCE65994129E3B82179A7804265C1CF214B380181380BDE" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800 dark:bg-orange-500 dark:hover:bg-orange-600">
+                    Verify badge
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="mx-auto max-w-6xl px-6 py-16">
+        <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Course Spotlights</p>
+        <h2 class="mt-4 text-3xl font-bold">Projects that grew out of class</h2>
+        <p class="mt-2 max-w-3xl text-gray-600 dark:text-gray-300">
+          I turn every assignment into something portfolio-worthy. These are the builds recruiters often ask me about during interviews.
+        </p>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <div class="badge-pill bg-orange-100 text-orange-700">CS 110 • Computing principles</div>
+            <h3 class="mt-3 text-xl font-semibold">Ethical Autonomous Driving Simulator</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Built branching storylines that visualize trolley-problem scenarios, captured player sentiment, and prepared a classroom talk on AI ethics.
+            </p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+              <li>Python</li>
+              <li>Decision trees</li>
+              <li>UX research</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <div class="badge-pill bg-orange-100 text-orange-700">CS 112 • Intro to CS II</div>
+            <h3 class="mt-3 text-xl font-semibold">Cookie Cost Estimator</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Modeled ingredient depletion, labor, shipping, and packaging to forecast bakery margins and flag unprofitable custom orders.
+            </p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+              <li>Python</li>
+              <li>File I/O</li>
+              <li>Unit testing</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <div class="badge-pill bg-orange-100 text-orange-700">CS 262 • Low-level programming</div>
+            <h3 class="mt-3 text-xl font-semibold">Linux Shell Lab</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Implemented a Bash-like CLI with piping, I/O redirection, job control, and a persistent history file. Instrumented with strace to profile syscalls.
+            </p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+              <li>C</li>
+              <li>Signals</li>
+              <li>Systems</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <div class="badge-pill bg-orange-100 text-orange-700">CS 321 • Software engineering</div>
+            <h3 class="mt-3 text-xl font-semibold">Inventory + Order Tracker 2.0</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Iterated on the restaurant ops tool with REST APIs, authentication, and dashboards built with Plotly to share analytics with partners.
+            </p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+              <li>Python</li>
+              <li>SQLite</li>
+              <li>API design</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="mx-auto max-w-6xl px-6 py-16">
+        <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Experience</p>
+        <h2 class="mt-4 text-3xl font-bold">Highlights & timeline</h2>
+        <div class="mt-10 space-y-6">
+          <article class="timeline-line rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-900">
+            <span class="timeline-point"></span>
+            <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+              <h3 class="text-xl font-semibold">AshburnFC • Founder / Technical Director</h3>
+              <p class="text-sm text-gray-500">2021 — Present</p>
+            </div>
+            <p class="mt-3 text-gray-600 dark:text-gray-300">
+              Built the full digital presence, automated registrations using Airtable + Stripe, and tracked player performance with custom dashboards.
+            </p>
+          </article>
+          <article class="timeline-line rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-900">
+            <span class="timeline-point"></span>
+            <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+              <h3 class="text-xl font-semibold">Crystal Bright LLC • Operations Tech</h3>
+              <p class="text-sm text-gray-500">2020 — Present</p>
+            </div>
+            <p class="mt-3 text-gray-600 dark:text-gray-300">
+              Introduced quoting automation, SMS reminders, and scheduling scripts that saved the founders 8 hours per week.
+            </p>
+          </article>
+          <article class="timeline-line rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-900">
+            <span class="timeline-point"></span>
+            <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+              <h3 class="text-xl font-semibold">GMU CS Student • Linux / Networking Tutor</h3>
+              <p class="text-sm text-gray-500">2023 — Present</p>
+            </div>
+            <p class="mt-3 text-gray-600 dark:text-gray-300">
+              Support fellow students with lab prep, run intro-to-CLI workshops, and write supplemental guides hosted on my self-managed wiki.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="bg-gray-50 py-16 dark:bg-gray-950">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Projects</p>
+              <h2 class="mt-4 text-3xl font-bold">Proof of execution</h2>
+            </div>
+            <div class="project-filter flex flex-wrap gap-2 text-sm font-semibold">
+              <button class="rounded-full border border-gray-300 px-4 py-2 dark:border-gray-700 active" data-filter="all">All</button>
+              <button class="rounded-full border border-gray-300 px-4 py-2 dark:border-gray-700" data-filter="java">Java</button>
+              <button class="rounded-full border border-gray-300 px-4 py-2 dark:border-gray-700" data-filter="python">Python</button>
+              <button class="rounded-full border border-gray-300 px-4 py-2 dark:border-gray-700" data-filter="systems">Systems</button>
+            </div>
+          </div>
+          <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <article class="flex flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-gray-900" data-tech="java">
+              <div class="text-sm text-gray-500">Java • CLI</div>
+              <h3 class="mt-2 text-xl font-semibold">ReminderApp</h3>
+              <p class="mt-2 flex-1 text-gray-600 dark:text-gray-300">OOP-based task management app using stacks and queues with persistent storage and scheduling.</p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-orange-500">
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">DSA</span>
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Productivity</span>
+              </div>
+            </article>
+            <article class="flex flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-gray-900" data-tech="python">
+              <div class="text-sm text-gray-500">Python • SQLite</div>
+              <h3 class="mt-2 text-xl font-semibold">Inventory + Order Tracker</h3>
+              <p class="mt-2 flex-1 text-gray-600 dark:text-gray-300">Tracks restaurant stock levels, prevents waste, and auto-generates purchasing suggestions.</p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-orange-500">
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Automation</span>
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Ops</span>
+              </div>
+            </article>
+            <article class="flex flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-gray-900" data-tech="java">
+              <div class="text-sm text-gray-500">Java • Minimax</div>
+              <h3 class="mt-2 text-xl font-semibold">TicTacToe AI</h3>
+              <p class="mt-2 flex-1 text-gray-600 dark:text-gray-300">Game AI using recursion + minimax, featuring move pruning and a debugging UI.</p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-orange-500">
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">AI</span>
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Education</span>
+              </div>
+            </article>
+            <article class="flex flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-gray-900" data-tech="python,systems">
+              <div class="text-sm text-gray-500">Python • Ethics</div>
+              <h3 class="mt-2 text-xl font-semibold">Autonomous Driving Simulator</h3>
+              <p class="mt-2 flex-1 text-gray-600 dark:text-gray-300">Simulated high-stakes choices for self-driving cars with analytics on moral frameworks.</p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-orange-500">
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Simulation</span>
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Ethics</span>
+              </div>
+            </article>
+            <article class="flex flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-gray-900" data-tech="python">
+              <div class="text-sm text-gray-500">Python • Economics</div>
+              <h3 class="mt-2 text-xl font-semibold">Cookie Cost Estimator</h3>
+              <p class="mt-2 flex-1 text-gray-600 dark:text-gray-300">Pricing engine that factors in labor, decoration time, and inventory to keep margins healthy.</p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-orange-500">
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Finance</span>
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Analytics</span>
+              </div>
+            </article>
+            <article class="flex flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-gray-900" data-tech="systems">
+              <div class="text-sm text-gray-500">C • Bash</div>
+              <h3 class="mt-2 text-xl font-semibold">Linux Shell Lab</h3>
+              <p class="mt-2 flex-1 text-gray-600 dark:text-gray-300">Custom bash shell clone with piping, I/O redirection, process control, and history.</p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-orange-500">
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Systems</span>
+                <span class="rounded-full bg-orange-50 px-3 py-1 dark:bg-orange-500/10">Networking</span>
+              </div>
+            </article>
+          </div>
+          <div class="mt-10 grid gap-6 rounded-2xl bg-white p-8 shadow-sm dark:bg-gray-900 md:grid-cols-2">
+            <div>
+              <h3 class="text-xl font-semibold">Project Services</h3>
+              <p class="mt-2 text-gray-600 dark:text-gray-300">Need rapid prototypes, backend APIs, or system tuning? I offer scoped engagements for founders and student orgs.</p>
+            </div>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>• MVP consulting & user research</li>
+              <li>• Codebase audits and documentation</li>
+              <li>• Infrastructure & DevOps support</li>
+              <li>• Technical workshops / tutoring</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="mx-auto max-w-6xl px-6 py-16">
+        <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Interactive Tools</p>
+        <h2 class="mt-4 text-3xl font-bold">Live widgets for recruiters & friends</h2>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">A taste of the micro-experiments I build for fun. Try them out and imagine them embedded in your org.</p>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <h3 class="text-xl font-semibold">BMI + Wellness Snapshot</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">A quick calculator to show I can pair frontend polish with useful UX.</p>
+            <form id="bmi-form" class="mt-4 space-y-3">
+              <div class="grid gap-3 md:grid-cols-2">
+                <label class="text-sm font-semibold">Height (cm)
+                  <input type="number" id="bmi-height" min="120" max="230" required class="mt-1 w-full rounded-xl border border-gray-200 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100" />
+                </label>
+                <label class="text-sm font-semibold">Weight (kg)
+                  <input type="number" id="bmi-weight" min="35" max="200" step="0.1" required class="mt-1 w-full rounded-xl border border-gray-200 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100" />
+                </label>
+              </div>
+              <button type="submit" class="w-full rounded-full bg-gray-900 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-orange-500 dark:hover:bg-orange-600">
+                Calculate BMI
+              </button>
+            </form>
+            <div id="bmi-result" class="mt-4 rounded-2xl bg-gray-50 p-4 text-sm text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+              Enter your stats to see the result.
+            </div>
+          </article>
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <h3 class="text-xl font-semibold">Currency Pulse (beta)</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Offline-friendly converter seeded with my most common travel currencies. Swap the rates in code to track “street” or black-market values.
+            </p>
+            <form id="fx-form" class="mt-4 space-y-3">
+              <div class="grid gap-3 md:grid-cols-3">
+                <label class="text-sm font-semibold">From
+                  <select id="fx-from" class="mt-1 w-full rounded-xl border border-gray-200 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="DZD">DZD</option>
+                  </select>
+                </label>
+                <label class="text-sm font-semibold">Amount
+                  <input type="number" id="fx-amount" value="100" min="1" class="mt-1 w-full rounded-xl border border-gray-200 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100" />
+                </label>
+                <label class="text-sm font-semibold">To
+                  <select id="fx-to" class="mt-1 w-full rounded-xl border border-gray-200 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="DZD">DZD</option>
+                  </select>
+                </label>
+              </div>
+              <button type="submit" class="w-full rounded-full bg-orange-500 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600">
+                Convert
+              </button>
+            </form>
+            <div id="fx-result" class="mt-4 rounded-2xl bg-gray-50 p-4 text-sm text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+              Result will appear here with a timestamp.
+            </div>
+            <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">Roadmap: plug this into an AWS Lambda hitting Open Exchange Rates + 3D globe data viz (CesiumJS) to show currency heatmaps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="lab" class="mx-auto max-w-6xl px-6 py-16">
+        <div class="rounded-3xl bg-gray-900 px-8 py-12 text-white shadow-2xl">
+          <div class="grid gap-10 md:grid-cols-2">
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-orange-300">Home Lab</p>
+              <h2 class="mt-4 text-3xl font-bold">My self-hosted playground</h2>
+              <p class="mt-4 text-gray-200">
+                Dell R720 rack + Raspberry Pi cluster orchestrated with Proxmox, Docker Compose, Tailscale, and GitHub Actions for automated backups and IaC.
+              </p>
+              <ul class="mt-6 space-y-3 text-gray-200">
+                <li>• Pi-hole, Nextcloud, Home Assistant, Uptime Kuma, Immich</li>
+                <li>• Reverse proxy via Traefik + Cloudflare tunnels</li>
+                <li>• Monitoring stack: Grafana + Prometheus + Loki</li>
+                <li>• Experimenting with k3s and GPU passthrough for AI workloads</li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <p class="text-sm text-gray-300">Latest upgrade</p>
+                <p class="mt-2 text-lg font-semibold">Automated ZFS snapshots + rclone off-site backups</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <p class="text-sm text-gray-300">What’s next</p>
+                <p class="mt-2 text-lg font-semibold">Deploying AI assistant containers to triage support tickets for Crystal Bright LLC</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <p class="text-sm text-gray-300">Open to collaborate?</p>
+                <p class="mt-2 text-lg font-semibold">Yes — I love pairing with other builders to stress-test their infra ideas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="bg-gray-50 py-16 dark:bg-gray-900">
+        <div class="mx-auto max-w-5xl px-6 text-center">
+          <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Resume</p>
+          <h2 class="mt-4 text-3xl font-bold">Full experience snapshot</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Download the PDF or skim it directly below.</p>
+          <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="assets/docs/Ali_Djebbari_Resume.pdf"
+              target="_blank"
+              class="rounded-full bg-orange-500 px-5 py-3 text-white shadow-lg transition hover:-translate-y-1 hover:bg-orange-600"
+              >View Resume</a
+            >
+            <a
+              href="mailto:ali.jr.djeb@gmail.com?subject=Interview%20with%20Ali%20Djebbari"
+              class="rounded-full border border-gray-300 px-5 py-3 font-semibold hover:border-orange-500 hover:text-orange-500 dark:border-gray-700"
+              >Book a call</a
+            >
+          </div>
+          <iframe src="assets/docs/Ali_Djebbari_Resume.pdf" class="mt-8 h-[700px] w-full rounded-2xl border border-gray-200 shadow-lg dark:border-gray-700"></iframe>
+        </div>
+      </section>
+
+      <section id="ventures" class="mx-auto max-w-6xl px-6 py-16">
+        <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Ventures & Community</p>
+        <h2 class="mt-4 text-3xl font-bold">Entrepreneurial track record</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-2xl border border-gray-100 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
+            <a href="https://ashburnfc.com" target="_blank" class="text-lg font-semibold text-orange-500">AshburnFC</a>
+            <p class="mt-2 text-sm text-gray-500">Youth soccer camp</p>
+            <p class="mt-3 text-gray-600 dark:text-gray-300">Managed drills, coaching, and CRM. Built analytics to track player development and retention.</p>
+          </article>
+          <article class="rounded-2xl border border-gray-100 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
+            <a href="https://crystalbrightllc.com" target="_blank" class="text-lg font-semibold text-orange-500">Crystal Bright LLC</a>
+            <p class="mt-2 text-sm text-gray-500">Cleaning services</p>
+            <p class="mt-3 text-gray-600 dark:text-gray-300">Built online booking workflow, customer portal, and automated follow-ups integrated with QuickBooks.</p>
+          </article>
+          <article class="rounded-2xl border border-gray-100 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
+            <a href="https://akhishop.com" target="_blank" class="text-lg font-semibold text-orange-500">Akhi Shop</a>
+            <p class="mt-2 text-sm text-gray-500">E-commerce</p>
+            <p class="mt-3 text-gray-600 dark:text-gray-300">Self-hosted on my infrastructure with shipping automations and analytics for dropshipping performance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="testimonials" class="bg-gray-50 py-16 dark:bg-gray-950">
+        <div class="mx-auto max-w-6xl px-6">
+          <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Signals</p>
+          <h2 class="mt-4 text-3xl font-bold">Feedback from collaborators</h2>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <blockquote class="rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-900">
+              <p class="text-gray-700 dark:text-gray-200">“Ali took our messy data export and had a working dashboard overnight. His documentation made onboarding new coaches effortless.”</p>
+              <cite class="mt-4 block text-sm font-semibold text-gray-500">Coach M., AshburnFC</cite>
+            </blockquote>
+            <blockquote class="rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-900">
+              <p class="text-gray-700 dark:text-gray-200">“He automated our inventory pipeline and taught our staff how to maintain it. Saved us hours every week.”</p>
+              <cite class="mt-4 block text-sm font-semibold text-gray-500">Operations Lead, Local Restaurant</cite>
+            </blockquote>
+            <blockquote class="rounded-2xl bg-white p-6 shadow-sm dark:bg-gray-900">
+              <p class="text-gray-700 dark:text-gray-200">“Dependable, curious, and patient with non-technical folks. Ali is the first person I call when I need creative solutions.”</p>
+              <cite class="mt-4 block text-sm font-semibold text-gray-500">Founder, Crystal Bright LLC</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="mx-auto max-w-6xl px-6 py-16">
+        <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Notebook / Blog</p>
+        <h2 class="mt-4 text-3xl font-bold">Shipping notes & daily experiments</h2>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">
+          I’m building a lightweight blog engine that lives on my home server. Here’s a preview of the type of content I plan to publish.
+        </p>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-400">Field Notes</p>
+            <h3 class="mt-2 text-xl font-semibold">Designing a 3D currency globe</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Sketches + architecture diagram for a CesiumJS globe that animates FX deltas across continents with hover tooltips and story cards.
+            </p>
+            <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-500">ETA: March 2025 <span aria-hidden="true">↗</span></span>
+          </article>
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-400">Deep Dive</p>
+            <h3 class="mt-2 text-xl font-semibold">Self-hosting news digest</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              A plan for scraping RSS/Atom feeds into Supabase, tagging them with embeddings, and pushing a daily summary to my portfolio.
+            </p>
+            <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-500">Status: Prototyping <span aria-hidden="true">↗</span></span>
+          </article>
+          <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-400">Playbook</p>
+            <h3 class="mt-2 text-xl font-semibold">From BMI widget to health platform</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Documenting how the BMI calculator could evolve into a privacy-first wellness dashboard for AshburnFC athletes.
+            </p>
+            <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-500">Read soon <span aria-hidden="true">↗</span></span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto max-w-6xl px-6 py-16">
+        <div class="grid gap-12 md:grid-cols-2">
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-orange-500">Contact</p>
+            <h2 class="mt-4 text-3xl font-bold">Let’s build together</h2>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+              Whether you’re recruiting, need a dependable freelancer, or want help launching a community-focused product, I’d love to chat.
+            </p>
+            <div class="mt-6 space-y-3">
+              <p>Email: <a href="mailto:ali.jr.djeb@gmail.com" class="text-orange-500">ali.jr.djeb@gmail.com</a></p>
+              <p>GitHub: <a href="https://github.com/alidjebbari" target="_blank" class="text-orange-500">github.com/alidjebbari</a></p>
+              <p>LinkedIn: <a href="https://linkedin.com/in/alidjebbari" target="_blank" class="text-orange-500">linkedin.com/in/alidjebbari</a></p>
+              <p>University Site: <a href="https://cs.gmu.edu/~adjebbar/" target="_blank" class="text-orange-500">cs.gmu.edu/~adjebbar</a></p>
+            </div>
+          </div>
+          <div class="rounded-3xl bg-gray-50 p-6 shadow-sm dark:bg-gray-900">
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label for="name" class="text-sm font-semibold">Name</label>
+                <input id="name" name="name" type="text" required class="mt-2 w-full rounded-lg border border-gray-200/70 bg-white/80 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100" placeholder="Recruiter at..." />
+              </div>
+              <div>
+                <label for="email" class="text-sm font-semibold">Email</label>
+                <input id="email" name="email" type="email" required class="mt-2 w-full rounded-lg border border-gray-200/70 bg-white/80 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100" placeholder="name@company.com" />
+              </div>
+              <div>
+                <label for="message" class="text-sm font-semibold">Project details</label>
+                <textarea id="message" name="message" rows="4" required class="mt-2 w-full rounded-lg border border-gray-200/70 bg-white/80 p-3 text-gray-800 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100" placeholder="Timeline, goals, stack..."></textarea>
+              </div>
+              <button type="submit" class="w-full rounded-full bg-orange-500 py-3 font-semibold text-white transition hover:bg-orange-600">Send message</button>
+              <p id="form-toast" class="hidden items-center justify-center rounded-full bg-emerald-500/10 py-2 text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                Message sent — I'll get back within 24 hours.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-100 py-10 text-gray-600 dark:bg-gray-950 dark:text-gray-400">
+      <div class="mx-auto flex max-w-6xl flex-col gap-8 px-6">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-500">Ali Djebbari</p>
+            <p class="mt-3 text-sm">Builder of human-centric tools. Always open to ambitious internships and freelance ops.</p>
+          </div>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">Quick tabs</p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <a href="#projects" class="footer-tab">Projects</a>
+              <a href="#tools" class="footer-tab">Tools</a>
+              <a href="#courses" class="footer-tab">Courses</a>
+              <a href="#lab" class="footer-tab">Home Lab</a>
+              <a href="#ventures" class="footer-tab">Ventures</a>
+              <a href="#insights" class="footer-tab">Blog</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">Get updates</p>
+            <p class="mt-3 text-sm">Drop your email and I’ll send release notes when major features or blog posts go live.</p>
+            <form class="mt-3 flex gap-2">
+              <input type="email" placeholder="you@company.com" class="flex-1 rounded-full border border-gray-300 px-4 py-2 text-sm focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" />
+              <button type="submit" class="rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white">Notify me</button>
+            </form>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-between gap-3 border-t border-gray-200 pt-4 text-xs text-gray-500 dark:border-gray-800 dark:text-gray-400 md:flex-row">
+          <p>&copy; <span id="current-year">2025</span> Ali Djebbari.</p>
+          <div class="flex gap-4">
+            <a href="https://github.com/alidjebbari" target="_blank" class="hover:text-orange-500">GitHub</a>
+            <a href="https://linkedin.com/in/alidjebbari" target="_blank" class="hover:text-orange-500">LinkedIn</a>
+            <a href="mailto:ali.jr.djeb@gmail.com" class="hover:text-orange-500">Email</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
