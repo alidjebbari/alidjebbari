@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // API Configuration
+  const API_BASE_URL = process.env.API_URL || window.location.hostname === 'localhost' 
+    ? 'http://localhost:3000' 
+    : 'https://api.alidjebbari.com'; // Update with your production URL
+
   // Persisted dark mode toggle
   const toggle = document.getElementById("mode-toggle");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -68,17 +73,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
   counters.forEach((counter) => observer.observe(counter));
 
-  // Contact form toast
+  // Contact form
   const contactForm = document.getElementById("contact-form");
   const toast = document.getElementById("form-toast");
 
-  contactForm?.addEventListener("submit", (event) => {
+  contactForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
-    toast?.classList.remove("hidden");
-    toast?.classList.add("flex");
-    contactForm.reset();
-    setTimeout(() => toast?.classList.add("hidden"), 4000);
+    const formData = new FormData(contactForm);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        toast?.classList.remove("hidden");
+        toast?.classList.add("flex");
+        toast && (toast.textContent = "Message sent — I'll get back within 24 hours.");
+        contactForm.reset();
+        setTimeout(() => toast?.classList.add("hidden"), 4000);
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      toast?.classList.remove("hidden");
+      toast && (toast.textContent = "Oops, message failed. Email me directly.");
+      setTimeout(() => toast?.classList.add("hidden"), 4000);
+      console.error("Contact form error", error);
+    }
   });
+
+
 
   // BMI calculator
   const bmiForm = document.getElementById("bmi-form");
@@ -102,33 +136,41 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   });
 
-  // Currency converter (static snapshot)
-  const fxRates = {
-    USD: 1,
-    EUR: 0.93,
-    GBP: 0.79,
-    DZD: 134.5,
-  };
-
+  // Currency converter with live rates
   const fxForm = document.getElementById("fx-form");
   const fxResult = document.getElementById("fx-result");
 
-  fxForm?.addEventListener("submit", (event) => {
+  fxForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
     if (!fxResult) return;
+    
     const from = document.getElementById("fx-from")?.value || "USD";
     const to = document.getElementById("fx-to")?.value || "EUR";
     const amount = Number(document.getElementById("fx-amount")?.value || 0);
-    if (!amount || !fxRates[from] || !fxRates[to]) return;
+    
+    if (!amount) return;
 
-    const usdValue = amount / fxRates[from];
-    const converted = usdValue * fxRates[to];
-    const time = new Date().toLocaleTimeString();
-
-    fxResult.innerHTML = `
-      <p class="text-lg font-semibold">${amount.toFixed(2)} ${from} → ${converted.toFixed(2)} ${to}</p>
-      <p class="text-xs text-gray-500 dark:text-gray-400">Rates last updated manually • ${time}</p>
-    `;
+    try {
+      const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${from}`);
+      const data = await response.json();
+      
+      if (data.rates && data.rates[to]) {
+        const converted = amount * data.rates[to];
+        const time = new Date().toLocaleTimeString();
+        
+        fxResult.innerHTML = `
+          <p class="text-lg font-semibold">${amount.toFixed(2)} ${from} → ${converted.toFixed(2)} ${to}</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">Live rates from exchangerate-api.com • ${time}</p>
+        `;
+      } else {
+        throw new Error("Currency not supported");
+      }
+    } catch (error) {
+      fxResult.innerHTML = `
+        <p class="text-sm text-red-600 dark:text-red-400">Unable to fetch rates. Please try again.</p>
+      `;
+      console.error("Currency converter error", error);
+    }
   });
 
   // Current year in footer
