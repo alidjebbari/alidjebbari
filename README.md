@@ -1,6 +1,7 @@
 # 🚀 Ali Djebbari – Personal Portfolio
 
-A modern, professional portfolio featuring a beautiful frontend with interactive tools and a **production-ready backend** for contact form handling, email notifications, and data logging.
+A clean, contemporary portfolio built with a refined design and a strong, dependable structure.
+
 
 ## ✨ Features
 
