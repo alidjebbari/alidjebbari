@@ -88,9 +88,7 @@ portfolio/
 
 ### Backend
 - **Email:** Set `EMAIL_USER` and `EMAIL_PASSWORD` in `.env`
-- **Email recipient:** Set `RECIPIENT_EMAIL` in `.env`
-- **Google Sheets:** (Optional) Set `GOOGLE_SHEET_ID` and service account key
-
+- 
 ## 📬 How It Works
 
 ### Contact Form Submission
