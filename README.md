@@ -25,10 +25,8 @@ A clean, contemporary portfolio built with a refined design and a strong, depend
 
 ### Option 1: Frontend Only (No Email)
 ```bash
-# Just open in browser
 open index.html
 
-# Or use any HTTP server
 npx serve
 ```
 
