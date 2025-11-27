@@ -80,7 +80,7 @@ portfolio/
 ## 🔧 Configuration
 
 ### Frontend
-- **API URL:** Edit in `assets/js/main.js` (defaults to localhost:3000)
+- **API URL:** Edit in `assets/js/main.js` 
 - **Styling:** Modify `assets/css/custom.css` or update Tailwind classes
 - **Resume:** Replace `assets/docs/Ali_Djebbari_Resume.pdf`
 
