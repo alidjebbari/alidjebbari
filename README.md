@@ -49,8 +49,7 @@ npx serve
 
 Visit `http://localhost:3000` - contact form will now send emails!
 
-**👉 For detailed setup instructions, see [SETUP_GUIDE.md](./SETUP_GUIDE.md)**
-
+**👉 For detailed setup instructions, see [SETUP_GUIDE**
 ## 📁 Project Structure
 
 ```
