@@ -104,7 +104,7 @@ portfolio/
 
 ## 🚀 Deployment
 
-### Deploy Backend to Railway (Recommended)
+### Deploy Backend to Railway
 ```bash
 # Install Railway CLI
 npm install -g @railway/cli
