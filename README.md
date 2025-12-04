@@ -12,7 +12,7 @@ A clean, contemporary portfolio built with a refined design and a strong, depend
 - 📊 Animated stat counters
 - 🏥 BMI calculator tool
 - 💱 Real-time currency converter
-- 📧 Contact form with validation & success feedback
+- 📧 Contact form & success feedback when completed
 
 ### Backend
 - 📬 **Email notifications** - Submissions sent directly to your Gmail
