@@ -10,9 +10,9 @@ A clean, contemporary portfolio built with a refined design and a strong, depend
 - 📱 Fully responsive design (mobile-first)
 - 🔍 Project filtering by technology
 - 📊 Animated stat counters
-- 🏥 BMI calculator tool
+- 🏥 BMI calculator tools
 - 💱 Real-time currency converter
-- 📧 Contact form & success feedback when completed
+- 📧 Contact form & success feedback when completed in site
 
 ### Backend
 - 📬 **Email notifications** - Submissions sent directly to your Gmail
