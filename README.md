@@ -12,10 +12,10 @@ A clean, contemporary portfolio built with a refined design and a strong, depend
 - 📊 Animated stat counters
 - 🏥 BMI calculator tools
 - 💱 Real-time currency converter
-- 📧 Contact form & success feedback when completed in site
+- 📧 Contact form & success feedback when completed
 
 ### Backend
-- 📬 **Email notifications** - Submissions sent directly to your Gmail
+- 📬 **Email notifications** - Submissions sent directly to my Gmail
 - 📑 **Google Sheets logging** - Track all contact submissions
 - ✅ **Input validation** - Server-side security checks
 - 🔒 **CORS support** - Cross-origin request handling
