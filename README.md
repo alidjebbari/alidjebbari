@@ -30,7 +30,7 @@ open index.html
 npx serve
 ```
 
-### Option 2: Full Set up (Frontend + Backend)
+### Full Set up (Frontend + Backend)
 
 **Step 1: Backend Setup**
 ```bash
