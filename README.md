@@ -23,7 +23,7 @@ A clean, contemporary portfolio built with a refined design and a strong, depend
 
 ## 🚀 Quick Start
 
-### Option 1: Frontend Only (No Email)
+### Option 1: Frontend Only No Email
 ```bash
 open index.html
 
