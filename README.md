@@ -3,7 +3,7 @@
 A clean, contemporary portfolio built with a refined design and a strong, dependable structure.
 
 
-## ✨ Features
+## Features
 
 ### Frontend
 - 🌓 Dark and Light mode with persistent preference
