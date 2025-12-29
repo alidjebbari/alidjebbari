@@ -15,7 +15,7 @@ A clean, contemporary portfolio built with a refined design and a strong, depend
 - 📧 Contact form & success feedback when completed
 
 ### Backend
-- 📬 **Email notifications** - Submissions sent directly to my Gmail
+- 📬 **Email notifications** - Submissions sent directly to my Email service
 - 📑 **Google Sheets logging** - Track all contact submissions
 - ✅ **Input validation** - Server-side security checks
 - 🔒 **CORS support** - Cross-origin request handling
