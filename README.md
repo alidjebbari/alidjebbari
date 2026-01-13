@@ -1,6 +1,6 @@
 # 🚀 Ali Djebbari –Personal Portfolio
 
-A clean,contemporary portfolio built with a refined design and a strong, dependable structure.
+A clean, contemporary portfolio built with a refined design and a strong, dependable structure.
 
 
 ## Features
