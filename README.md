@@ -19,7 +19,7 @@ A clean, contemporary portfolio built with a refined design and a strong structu
 - 📑 **Google Sheets logging** - Track all contact submissions
 - ✅ **Input validation** - Server-side security checks
 - 🔒 **CORS support** - Cross-origin request handling
-- ⚡ **Easy deployment** - Railway, Render, Heroku support
+- ⚡ **Easy deployment** - Railway, Render, 
 
 ## 🚀 Quick Start
 
