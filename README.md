@@ -6,7 +6,7 @@ A clean, contemporary portfolio built with a refined design and a strong structu
 ## Features
 
 ### Frontend
-- 🌓 Dark and Light mode with multiple preference
+- 🌓 Dark and Light mode with multiple preferenc
 - 📱 Full responsive design (mobile-first)
 - 🔍 Project filtering by tech
 - 📊 Animated stat counters
