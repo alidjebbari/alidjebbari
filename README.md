@@ -1,5 +1,5 @@
 # 🚀 Ali Djebbari – Personal Portfolio
-
+.
 A clean, contemporary portfolio built with a refined design and a strong structure
 .
 ## Features
